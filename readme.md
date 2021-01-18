@@ -27,3 +27,8 @@ xmodmap -e 'keycode  68 = Tab ISO_Left_Tab Tab ISO_Left_Tab'
 xmodmap -e 'keycode  67 = w W w W'
 
 sudo cp mirrorlist /etc/pacman.d/
+
+pycharm 无法输入中文 fcitx 输入法
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx

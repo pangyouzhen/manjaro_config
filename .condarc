@@ -1,0 +1,18 @@
+channels:
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/conda-forge/
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/peterjc123/
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/menpo/
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/msys2/
+  - https://mirrors.bfsu.edu.cn/anaconda/cloud/bioconda/
+  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/free/
+  - defaults
+show_channel_urls: true
+envs_dirs:
+  - /data/conda/envs
+pkgs_dirs:
+  - /data/conda/pkgs
+remote_connect_timeout_secs: 40.0
+remote_read_timeout_secs: 100.0
+ssl_verify: false
