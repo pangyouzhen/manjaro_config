@@ -1,7 +1,7 @@
 import subprocess
 
 # 替换整体源
-source = "echo Server=https://mirrors.tuna.tsinghua.edu.cn/manjaro/stable > /etc/pacman.d/mirrorlist"
+source = "echo 'Server=https://mirrors.tuna.tsinghua.edu.cn/manjaro/stable/$repo/$arch' > /etc/pacman.d/mirrorlist"
 update_source = subprocess.call(source.split())
 if update_source != 0:
     print("替换源失败")
@@ -15,9 +15,11 @@ if update_source != 0:
 print("finish update system")
 
 # 安装软件
-pacman_pkgs = ["git", "gvim", "fcitx", "fcitx-configtool", "fcitx-rime",
+pacman_pkgs = ["git", "gvim",
+               "fcitx", "fcitx-configtool", "fcitx-rime",
                "you-get", "community/pycharm-community-edition",
-               "docker", ]
+               "docker",
+               "yay"]
 install_cmd = "pacman -S %s"
 for i in pacman_pkgs:
     install = install_cmd % (i)

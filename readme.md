@@ -14,14 +14,8 @@ sudo pacman -S community/pycharm-community-edition
 sudo yay -S you-get 
 
 
-sudo pacman -S fcitx
-sudo pacman -S fcitx-configtool
-fcitx
-sudo pacman -S fcitx-rime
 mv ./default.yaml ~/.config/fcitx/rime/build/
 
-sudo pacman -S gvim
-注意： 这里是gvim 才支持 剪切板
 
 xmodmap -e 'keycode  68 = Tab ISO_Left_Tab Tab ISO_Left_Tab'
 xmodmap -e 'keycode  67 = w W w W'
