@@ -51,7 +51,8 @@ if clone_config != 0:
     print("下载配置文件失败")
 
 #  更新配置文件
-
+# /home/pang/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+# 修改配置文件，防止和idea等软件冲突
 
 # 好像不需要再进行添加了
 # export GTK_IM_MODULE=fcitx
