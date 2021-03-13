@@ -25,10 +25,11 @@ print("finish update system")
 
 # 安装软件
 pacman_pkgs = ["git", "gvim",
-               "fcitx", "fcitx-configtool", "fcitx-rime",
+               "fcitx5-im", "fcitx5-rime",
                "community/pycharm-community-edition",
                "docker",
-               "yay"]
+               "yay",
+               "conky"]
 install_cmd = "pacman -S %s"
 for i in pacman_pkgs:
     install = install_cmd % (i)
