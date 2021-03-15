@@ -29,6 +29,7 @@ pacman_pkgs = ["git", "gvim",
                "community/pycharm-community-edition",
                "docker",
                "yay",
+               "unclutter",
                "conky"]
 install_cmd = "pacman -S %s"
 for i in pacman_pkgs:
