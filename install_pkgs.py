@@ -24,13 +24,14 @@ if update_source != 0:
 print("finish update system")
 
 # 安装软件
+# touchegg 多点触控
 pacman_pkgs = ["git", "gvim",
                "fcitx5-im", "fcitx5-rime",
                "community/pycharm-community-edition",
                "docker",
                "yay",
                "unclutter",
-               "conky"]
+               "conky", "touchegg"]
 install_cmd = "pacman -S %s"
 for i in pacman_pkgs:
     install = install_cmd % (i)
