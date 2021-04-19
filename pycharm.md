@@ -36,15 +36,13 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 from sklearn import metrics
 
-
-
 np.random.seed(0)
 torch.manual_seed(0)
 
 
 ```
 
-1. 数据结构常用模板 sol 
+1. 数据结构常用模板 solution
 
 ```
 from typing import List
