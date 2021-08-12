@@ -7,8 +7,7 @@ pacman_pkgs = ["git", "gvim",
                "community/pycharm-community-edition",
                "docker",
                "yay",
-               "unclutter",
-               "conky", "touchegg"]
+               "conky", "touchegg", ]
 install_cmd = "pacman -S %s"
 for i in pacman_pkgs:
     install = install_cmd % i
@@ -16,7 +15,7 @@ for i in pacman_pkgs:
     if ins != 0:
         print("安装软件失败 %s" % i)
 
-yay_pkgs = ["you-get", ]
+yay_pkgs = ["you-get", "vlc"]
 yay_install_cmd = "yay -S %s"
 for i in yay_pkgs:
     install = yay_install_cmd % i

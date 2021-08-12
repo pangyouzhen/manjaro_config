@@ -24,6 +24,10 @@ class $class_name$(nn.Module):
 $END$
 ```
 
+```
+
+```
+
 
 1. 数据分析常用模板 dataimport
 
