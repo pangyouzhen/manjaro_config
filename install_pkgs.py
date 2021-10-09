@@ -4,7 +4,6 @@ import subprocess
 # touchegg 多点触控
 pacman_pkgs = ["git", "gvim",
                "fcitx5-im", "fcitx5-rime",
-               "community/pycharm-community-edition",
                "docker",
                "yay",
                "conky", "touchegg", ]
