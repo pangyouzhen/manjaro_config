@@ -8,4 +8,4 @@
 UUID=e717c5c6-1026-4d99-ade4-9b3aed89ba54 /              ext4    defaults,noatime 0 1
 UUID=63562b7e-da00-4d04-8ae5-ab92444b131a swap           swap    defaults,noatime 0 2
 tmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0
-/dev/sdb1                      /mnt ext4 defaults,noatime 0 1
+/dev/sdb1                      /data ext4 defaults,noatime 0 1

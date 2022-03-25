@@ -1,0 +1,18 @@
+sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syuu
+sudo pacman -S go
+sudo pacman -S rust
+sudo pacman -S docker
+sudo pacman -S yay
+sudo pacman -S firefox
+sudo pacman -S v2ray
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons
+sudo pacman -S vim
+sudo pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-rime
+sudo pacman -S mlocate
+sudo pacman -S graphviz
+sudo pacman -S base-devel
+yay -S aur/wechat-uos
+yay -S v2raya
+yay -S  cn.com.10jqka 
+yay -S --noconfirm community/obs-studio
