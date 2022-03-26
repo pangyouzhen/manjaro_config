@@ -8,6 +8,7 @@ def pre_install():
     && sudo pacman -S --noconfirm  yay git
     """
     subprocess.run(update_manjaro.split())
+    print("yay -----------------------------")
 
 def install_pkgs():
     pkgs = None
