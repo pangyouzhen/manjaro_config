@@ -8,4 +8,5 @@ mv .condarc ~
 # 字体设置
 mv fonts.conf ~/.config/fontconfig/
 python3.8 get-pip.py
+pip3.8 install virutalenv
 sudo vboxreload
