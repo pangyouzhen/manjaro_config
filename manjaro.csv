@@ -1,8 +1,0 @@
-文件名,作用,路径,命令
-xfce4-keyboard-shortcuts.xml,xcfe4快捷键,~/config/xfce4/xfconf/xfce-perchannel-xml/,
-settings.xml,maven配置文件,,
-daemon.json,docker配置文件,,
-.pip,pip 配置文件,～,
-get-pip.py,安装pip,,python3.8  get-pip.py
-.condarc,conda 配置文件,~,
-fonts.conf, 字体配置文件,~/.config/fontconfig/,
