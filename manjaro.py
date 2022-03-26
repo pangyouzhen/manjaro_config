@@ -5,8 +5,7 @@ def pre_install():
     update_manjaro = \
     """pacman-mirrors -c China \
     && sudo pacman -Syuu --noconfirm   \
-    && sudo pacman -S --noconfirm  yay git \
-    && cd /tmp/ && git clone git@github.com:pangyouzhen/manjaro_config.git 
+    && sudo pacman -S --noconfirm  yay git
     """
     subprocess.run(update_manjaro.split())
 
