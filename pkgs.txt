@@ -30,3 +30,4 @@ virtualbox
 fcitx5
 vlc
 mlocate
+tree

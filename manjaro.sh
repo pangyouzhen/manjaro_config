@@ -14,6 +14,8 @@ mv fonts.conf ~/.config/fontconfig/
 # 触摸板设置
 mv 30-touchpad.conf  /etc/X11/xorg.conf.d/
 
+# docker config
+mv daemon.json /etc/docker/
 python3.8 get-pip.py
 pip3.8 install virutalenv
 sudo vboxreload
