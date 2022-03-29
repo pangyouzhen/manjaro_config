@@ -31,3 +31,4 @@ fcitx5
 vlc
 mlocate
 tree
+gdb
