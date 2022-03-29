@@ -3,19 +3,25 @@ cat pkgs.txt | xargs yay -S --noconfirm
 
 
 # 快捷键设置
-mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-mv xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/ && mv xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 # python源
 mv .pip ~
 mv .condarc ~
 # 字体设置
-mv fonts.conf ~/.config/fontconfig/
+mkdir -p ~/.config/fontconfig/ &&  mv fonts.conf ~/.config/fontconfig/
 
 # 触摸板设置
-mv 30-touchpad.conf  /etc/X11/xorg.conf.d/
+mkdir /etc/X11/xorg.conf.d/ && mv 30-touchpad.conf  /etc/X11/xorg.conf.d/
 
 # docker config
-mv daemon.json /etc/docker/
+mkdir /etc/docker/ && mv daemon.json /etc/docker/
+
+# python 
 python3.8 get-pip.py
 pip3.8 install virutalenv
+
+# virtual reload
 sudo vboxreload
+
+## .bashrc
+cat .bashrc >> ~/.bashrc && source ~/.bashrc

@@ -56,6 +56,7 @@
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-taskmanager"/>
       <property name="&lt;Super&gt;2" type="string" value="firefox"/>
+      <property name="&lt;Super&gt;3" type="string" value="/opt/vscode/bin/code"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
