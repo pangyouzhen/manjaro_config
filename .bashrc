@@ -51,3 +51,21 @@ alias rsync-stock="rsync -avz root@81.71.140.148:/data/project/stock ./ --exclud
 alias s148="ssh root@81.71.140.148"
 alias python="python3"
 alias code="/opt/vscode/bin/code"
+alias richeasy="sudo /usr/local/RichEZ/AppRun > /dev/null 2>&1 &"
+alias v2raya='sudo v2raya > /dev/null 2>&1 &'
+
+#  manjaro 下更新系统命令
+Syuu (){
+  sudo timeshift --create --comments $1 --snapshot-device /dev/sdb1 && sudo pacman -Syuu
+}
+
+http_proxy(){
+  export http=http://127.0.0.1:$1
+  export https=http://127.0.0.1:$1
+}
+
+git_proxy(){
+  git config --global http.proxy socks5://127.0.0.1:$1
+  git config --global https.proxy socks5://127.0.0.1:$1
+  git config --global http.sslVerify false
+}

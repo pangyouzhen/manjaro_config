@@ -1,0 +1,2 @@
+## Skip password prompt for current user
+Defaults:pang !authenticate

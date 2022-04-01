@@ -32,3 +32,4 @@ vlc
 mlocate
 tree
 gdb
+debtap

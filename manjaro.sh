@@ -10,8 +10,8 @@ mv .condarc ~
 # 字体设置
 mkdir -p ~/.config/fontconfig/ &&  mv fonts.conf ~/.config/fontconfig/
 
-# 触摸板设置
-mkdir /etc/X11/xorg.conf.d/ && mv 30-touchpad.conf  /etc/X11/xorg.conf.d/
+# 触摸板设置 不起作用，需要在鼠标和触摸板的gui中设置
+# mkdir /etc/X11/xorg.conf.d/ && mv 30-touchpad.conf  /etc/X11/xorg.conf.d/
 
 # docker config
 mkdir /etc/docker/ && mv daemon.json /etc/docker/
@@ -25,3 +25,8 @@ sudo vboxreload
 
 ## .bashrc
 cat .bashrc >> ~/.bashrc && source ~/.bashrc
+
+## 
+mkdir -pv /data/bak/ && mv  ~/.local/share/keyrings/ /data/bak
+
+sudo mv 01-skip_auth /etc/sudoers.d/
