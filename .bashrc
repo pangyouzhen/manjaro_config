@@ -2,14 +2,13 @@
 #. ~/z.sh
 
 
-if [[ $(uname) == "MINGW"* ]]; then
-  alias python="winpty python"
-#  echo "git bash alias --python-- success"
-  # wsl,mobaxterm 使用/mnt/d
-  # git bash 使用/d/ /c/
-  ln -s /d/ /mnt/d/
-  ln -s /c/ /mnt/c/
-  #
+if [[ $(uname) != "Linux"* || $(uname -a) == *"Microsoft"*]]; then
+    # 映射linux wps的相关命令到windows
+     alias et='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/EXCEL.EXE'
+     alias wpp='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/WINWORD.EXE'
+     alias wps='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/POWERPNT.EXE'
+    # 映射linux资源管理器到windows
+     alias thundar='explorer.exe'
 fi
 
 #if [[ $(uname) == "MINGW"* ]]; then
