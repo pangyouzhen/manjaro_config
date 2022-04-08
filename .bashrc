@@ -8,7 +8,7 @@ if [[ $(uname) != "Linux"* || $(uname -a) == *"Microsoft"*]]; then
      alias wpp='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/WINWORD.EXE'
      alias wps='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/POWERPNT.EXE'
     # 映射linux资源管理器到windows
-     alias thundar='explorer.exe'
+     alias thunar='explorer.exe'
 fi
 
 #if [[ $(uname) == "MINGW"* ]]; then
