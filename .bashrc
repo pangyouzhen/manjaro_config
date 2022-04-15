@@ -1,21 +1,22 @@
 # https://github.com/rupa/z 启用z.sh 服务
 #. ~/z.sh
 
-
-if [[ $(uname) != "Linux"* || $(uname -a) == *"Microsoft"*]]; then
-    # 映射linux wps的相关命令到windows
-     alias et='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/EXCEL.EXE'
-     alias wpp='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/WINWORD.EXE'
-     alias wps='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/POWERPNT.EXE'
-    # 映射linux资源管理器到windows
-     alias thunar='explorer.exe'
+if grep -q Microsoft /proc/version; then
+    # wsl
+    exe_program()
+elif [[ "$UNAME" == CYGWIN* || "$UNAME" == MINGW* ]]; then
+    # git bash == windows
+    exe_program()
 fi
 
-#if [[ $(uname) == "MINGW"* ]]; then
-#  . /d/software/miniconda/etc/profile.d/conda.sh
-#  echo "conda success"
-#fi
-
+exe_program(){
+    # 映射linux wps的相关命令到windows
+     alias et='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/EXCEL.EXE'
+     alias wps='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/WINWORD.EXE'
+     alias wpp='/mnt/c/Program\ Files/Microsoft\ Office/root/Office16/POWERPNT.EXE'
+    # 映射linux资源管理器到windows
+     alias thunar='explorer.exe'
+}
 
 lg() {
   #  lazygit
@@ -35,6 +36,10 @@ lg() {
  port_path(){ 
   lsof -i:$1 | awk '{print $2}' | grep -v PID | xargs pwdx
  }
+
+scp148(){
+  scp $1 root@81.71.140.148:/tmp && ssh root@81.71.140.148
+}
 
 alias vv="virtualenv venv && source ./venv/bin/activate"
 alias docker_remove_exit="docker ps -a | grep Exit | awk '{print \$1}' | xargs docker rm"
