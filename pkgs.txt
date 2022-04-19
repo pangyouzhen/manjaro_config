@@ -33,3 +33,7 @@ mlocate
 tree
 gdb
 debtap
+texlive-core
+texlive-langchinese
+texlive-latexextra
+texstudio
