@@ -3,7 +3,7 @@ cat pkgs.txt | xargs yay -S --noconfirm
 
 
 # 快捷键设置
-mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/ && mv xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+mkdir -p ~/.config/xfce4/xfconf/xfce-perchannel-xml/ && cp xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 # python源
 mv .pip ~
 mv .condarc ~
