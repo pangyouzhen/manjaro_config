@@ -73,3 +73,8 @@ git_proxy(){
   git config --global https.proxy socks5://127.0.0.1:$1
   git config --global http.sslVerify false
 }
+
+cp2king(){
+  # 挂载并复制文件到金士顿u盘
+  sudo mount /dev/sdc1 /mnt/king && cp -r $1 /mnt/king && echo "cp2u success" && umount /mnt/king
+}
