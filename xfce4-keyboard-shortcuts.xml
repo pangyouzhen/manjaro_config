@@ -29,6 +29,7 @@
       <property name="&lt;Super&gt;r" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Control&gt;Escape" type="empty"/>
     </property>
@@ -59,6 +60,7 @@
       <property name="&lt;Super&gt;3" type="string" value="/opt/vscode/bin/code"/>
       <property name="&lt;Super&gt;l" type="string" value="systemctl suspend"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="flameshot gui"/>
+      <property name="&lt;Super&gt;5" type="string" value="/opt/cn.com.10jqka/files/HevoNext.B2CApp"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -117,8 +119,8 @@
       <property name="&lt;Primary&gt;F12" type="empty"/>
       <property name="&lt;Super&gt;KP_Left" type="empty"/>
       <property name="&lt;Super&gt;KP_Right" type="empty"/>
-      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Down" type="empty"/>
+      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Page_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Home" type="empty"/>
       <property name="&lt;Super&gt;KP_End" type="empty"/>
@@ -194,7 +196,6 @@
       <property name="Escape" type="string" value="cancel_key"/>
       <property name="&lt;Primary&gt;F6" type="string" value="workspace_6_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Home" type="string" value="move_window_prev_workspace_key"/>
-      <property name="&lt;Super&gt;KP_Page_Up" type="string" value="tile_up_right_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;KP_8" type="string" value="move_window_workspace_8_key"/>
       <property name="&lt;Super&gt;KP_Down" type="string" value="tile_up_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
@@ -207,17 +208,17 @@
       <property name="&lt;Primary&gt;F9" type="string" value="workspace_9_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Right" type="string" value="move_window_right_key"/>
       <property name="&lt;Alt&gt;F10" type="string" value="maximize_window_key"/>
-      <property name="&lt;Super&gt;KP_Home" type="string" value="tile_up_left_key"/>
       <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
       <property name="&lt;Alt&gt;space" type="string" value="popup_menu_key"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Up" type="string" value="raise_window_key"/>
       <property name="&lt;Super&gt;KP_Up" type="string" value="tile_down_key"/>
-      <property name="&lt;Super&gt;KP_End" type="string" value="tile_down_left_key"/>
       <property name="&lt;Alt&gt;F11" type="string" value="fullscreen_key"/>
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Super&gt;d" type="string" value="show_desktop_key"/>
       <property name="&lt;Super&gt;Left" type="string" value="tile_left_key"/>
       <property name="&lt;Super&gt;Right" type="string" value="tile_right_key"/>
+      <property name="&lt;Super&gt;Up" type="string" value="tile_up_left_key"/>
+      <property name="&lt;Super&gt;Down" type="string" value="tile_down_left_key"/>
     </property>
   </property>
   <property name="providers" type="array">
